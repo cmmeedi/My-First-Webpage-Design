@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <form method="get" action="/Media-Queries/Pricing-Panel/index.html">
+    <form method="get" action="index.html">
         <button style="margin: auto;">Click Me</button>
     </form>
     
