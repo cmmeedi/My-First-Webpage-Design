@@ -55,20 +55,7 @@ table {
 
 /* ----------------- End CSS Reset Properties ----------- */
 
-    /* These are the styles to be applied to most mobile devices */
-@media(max-size: 720px){
 
-}
-
-    /* These are the styles to be applied to most Tablet devices */
-@media(max-size: 1024){
-
-}
-
-        /* These are the styles to be applied to landscape orientation */
-@media(orientation: landscape){
-
-}
 
 
         /* These are the styles that are to be applied to large (usually PC) screens. */
@@ -91,6 +78,7 @@ body{
 header{
         /* Changing 'background-color' of header */
     background-color: #260f26;
+    width: 100%;
 }
     /* Setting properties of the nav ul within the header */
 header nav ul{
@@ -243,12 +231,76 @@ header h1{
     height: 300px;
     background-color: #86cb92;
 }
+#conclusion h2{
+    color: #260f26;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#conclusion p{
+    color: #260f26;
+    text-align: center;
+    margin: 3% 15%;
+}
 
 footer{
     background-color: #251f47;
     width: 100%;
     height: 100px;
 }
+footer #copyright{
+    text-align: right;
+    padding-top: 5%;
+}
+
+
+
+    /* These are the styles to be applied to most mobile devices */
+    @media(max-width: 720px){
+
+        #summary{
+            height: 200px;
+        }
+        #priceIntro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 1300px;
+        }
+        .plan{
+            width: 300px;
+            height: 400px;
+        }
+        .circle{
+            height: 100px;
+
+        }
+
+        #commSect{
+            padding: 5% 10% 0 5%;
+        }
+        .comment{
+            
+        }
+
+    }
+    
+        /* These are the styles to be applied to most Tablet devices 
+    @media(max-size: 1024){
+    
+    }
+
+    */
+    
+    /* These are the styles to be applied to landscape orientation 
+    @media(orientation: landscape){
+        
+    }
+*/
+
 
 
 Page Colors{
