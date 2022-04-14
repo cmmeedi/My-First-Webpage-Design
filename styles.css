@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Credits to he who made the reset properties */
+
+            /* <!!-- Important Note --!!>> */
+
+    /* Since some browsers have their own defaults for properties such as 'margin' and 'padding' what this code below does is sets everything to 0 so that whatever browser i create this page on will show up the same on every other browser. */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------- End CSS Reset Properties ----------- */
+
+    /* These are the styles to be applied to most mobile devices */
+@media(max-size: 720px){
+
+}
+
+    /* These are the styles to be applied to most Tablet devices */
+@media(max-size: 1024){
+
+}
+
+        /* These are the styles to be applied to landscape orientation */
+@media(orientation: landscape){
+
+}
+
+
+        /* These are the styles that are to be applied to large (usually PC) screens. */
+
+    /* Setting universal properties */
+*{
+        /* Setting a universal font color */
+    color: #82b59d;
+        /* Setting a universal font */
+    font-family: 'Montserrat Alternative', sans-serif ;
+}
+
+    /* Setting Body properties */
+body{
+        /* Changing the background color of the entire page */
+    background-color: #404e7c;
+}
+
+    /* Setting Header Properties */
+header{
+        /* Changing 'background-color' of header */
+    background-color: #260f26;
+}
+    /* Setting properties of the nav ul within the header */
+header nav ul{
+        /* Changing display type to flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+header a{
+    text-decoration: none;
+    color: none;
+}
+header a:hover{
+    color: teal;
+}
+    /* Setting Header h1 Properties */
+header h1{
+        /* Making h1 4x the size of regular font */
+    font-size: 4em;
+        /* Placing title in the middle */
+    text-align: center;
+        /* Added more space between links and title */
+    margin-top: 2%;
+}
+
+#summary{
+    margin: 5%;
+    display: flex;
+    height: 70px;
+    padding-bottom: 10%;
+}
+#summSect{
+    width: 75%;
+    margin-right: 5%;
+}
+#summSectPic img{
+    width: 50%;
+    border-radius: 200px;
+}
+
+#priceIntro{
+    height: 600px;
+    background-color: #260f26;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.plan{
+    text-align: center;
+    margin: 3% 3%;
+    border: 3px solid white;
+    width: 25%;
+    height: auto;
+}
+.plan hr{
+    border-color: #86cb92;
+    width: 80%;    
+}
+.plan h3{
+    font-size: 2em; 
+}
+.plan h4{
+    margin-top: 15%;
+    margin-bottom: -8%;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+.featuresList{
+    font-size: 1em;
+    margin-top: 15%;
+    line-height: 150%;
+
+}
+.circle{
+    margin: 3% 30%;
+
+}
+.circle img{
+    width: 100%;
+    height: auto;
+    border-radius: 200px;
+}
+
+#commSect{
+    background-color: white;
+    height: 800px;   
+    padding-top: 1%; 
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    background-color: #86cb92;
+    border: 3px solid black;
+    padding: 20px;
+    margin: auto;
+    border-radius: 40px;
+}
+.comment img{
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+}
+.comment:nth-of-type(odd){
+    margin-bottom: 1%;
+    margin-left: 15%;
+    background-color: #71b48d;
+}
+.comment:nth-of-type(odd) p{
+    color: #252525;
+    margin: 2% 3%;
+}
+.comment:nth-of-type(even){
+    flex-direction: row-reverse;
+    margin-bottom: 1%;
+    margin-right: 15%;
+    background-color: #251f47;
+}
+.comment:nth-of-type(even) p{
+    color: #71b48d;
+    margin: 2% 3%;
+    text-align: right;
+    
+}
+
+#products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.productImage img{
+    width: 100%;
+    height: 200px;
+}
+.product h3{
+    font-size: 2.5em;
+    text-align: center;
+    margin: 3%;
+
+}
+
+#conclusion{
+    color: #260f26;
+    width: 100%;
+    height: 300px;
+    background-color: #86cb92;
+}
+
+footer{
+    background-color: #251f47;
+    width: 100%;
+    height: 100px;
+}
+
+
+Page Colors{
+    color: #86cb92;
+    color: #82b59d;
+    color: #404e7c;
+    color: #251f47;
+    color: #260f26;
+}
